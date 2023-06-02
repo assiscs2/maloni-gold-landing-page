@@ -1,113 +1,141 @@
-import Image from 'next/image'
+import dynamic from "next/dynamic";
+import Image from "next/image";
+import whatsappLogo from "../assets/icons8-whatsapp.svg";
+import wheyMax from "../assets/whey-100-max.png";
+import wheyIntegral from "../assets/whey-100-integral.png";
+import oculosMaloni from "../assets/oculos-maloni.jpeg";
+import { WhatsappButton } from '@/compontents/WhatsappButton';
+
 
 export default function Home() {
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+  
+    <main className="flex items-center text-gray-100 flex-col justify-center text-sm min-w-full">
+      <div className="w-full">
+        
+        <header className="bg-gray-950 h-14 flex items-center justify-center text-yellow-300">
+          <h1 className="font-bold">
+            Maloni Gold
+            <span className="text-xs font-light">
+              {" "}
+              - Loja física desde 2009
+            </span>
+          </h1>
+        </header>
+        <div
+          // className="bg-gray-100"
+          className="bg-gradient-to-br from-red-800 to-blue-800"
+          // className="bg-gradient-to-tl from-blue-600 via-purple-900 to-red-600"
+        >
+          <section className="flex p-4 gap-3 items-center justify-center w-full">
+            <div>
+              <div className="flex items-center justify-center">
+                <p className="mb-3 text-base font-bold">
+                  💥😎 Imperdível, comprou ganhou! 😎💥
+                </p>
+              </div>
+              <div className="flex px-2 items-center justify-center flex-col pt-2 font-bold">
+                <div className="flex flex-col items-center justify-center text-center">
+                  <span>
+                    Comprando o Whey 100% Max ou Integral, ganhe um óculos de
+                    sol e {" "}
+                    <span className="font-extrabold underline underline-offset-2 text-yellow-300">
+                      {" "}
+                      receba em até 24hs com FRETE GRÁTIS
+                    </span>{" "}
+                     {" "}para São Paulo/SP!
+                  </span>
+                  <p className="mt-1"></p>
+                  <span className="font-bold">
+                    🚨 E não para por ai!! Retirando na loja, você ganha mais um
+                    brinde extra secreto!!
+                💥💭
+                  </span>
+                </div>
+                <div className="flex items-center justify-center pt-2">
+                  <p className="mt-1"></p>
+                  <span className="text-xs text-gray-200 font-light">
+                    Estrada Itaquera Guaianazes, nº45 - SP
+                  </span>
+                </div>
+              </div>
+              <div className="flex items-center justify-center pt-4">
+                <WhatsappButton />
+              </div>
+              <div className="h-72 flex items-center justify-center overflow-hidden">
+                {/* h-[182px] w-[8.5rem] */}
+                <Image
+                  className="h-[14rem] w-[7.6rem] translate-x-[48px] translate-y-1"
+                  src={wheyMax}
+                  alt="imagem whey 100% marca: Max"
+                  height={500}
+                  width={250}
+                  priority={true}
+                />
+                {/* h-56 w-64 */}
+                <Image
+                  className="h-[17rem] w-[16rem] translate-x-[0.75rem]"
+                  src={wheyIntegral}
+                  alt="imagem whey 100% marca: Integralmédica"
+                  height={700}
+                  width={420}
+                  priority={true}
+                />
+                {/* <Image className="position absolute " src={oculosMaloni} height={500} width={250} priority={true}/> */}
+              </div>
+              <div className="flex items-center justify-center pt-6">
+                <p className="absolute z-50 text-yellow-300 font-extrabold text-2xl text-center translate-y-12">
+                  Comprando a partir de uma unidade por apenas R$ 125,00 cada, receba um óculos de GRAÇA!!
+                  {/* Por apenas R$ 125,00 cada!! */}
+                </p>
+              </div>
+            </div>
+          </section>
+          <section className="flex p-4 gap-3 items-center flex-col justify-center w-full mt-28">
+            <div className="flex flex-col">
+              <span className="text-center px-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                molestie volutpat ligula sed ultrices. Vestibulum ante ipsum
+                primis in faucibus orci luctus et ultrices posuere cubilia
+                Curae; Aliquam nec erat rutrum leo aliquet suscipit. Phasellus
+                at augue vel nibh commodo semper id interdum magna. Pellentesque
+                quis mollis odio. Donec ac arcu vitae metus iaculis sollicitudin
+                gravida ut mi.
+              </span>
+              <div className="flex items-center justify-center pt-4">
+                <button className="flex h-7 bg-yellow-300 border-2 border-gray-950 py-9 px-2 items-center justify-center text-black font-bold rounded-2xl hover:bg-yellow-500 transition-colors">
+                  <Image
+                    src={whatsappLogo}
+                    alt="logo do whatsapp"
+                    width={80}
+                    height={80}
+                    className="max-h-[72px] ml-1"
+                  />
+                  {/* Clique aqui para garantir essa oportunidade ou tirar dúvidas!*/}
+
+                  <div className="flex flex-col -translate-x-2">
+                    <p>POUCAS UNIDADES!! </p> Compre agora ou tire suas dúvidas
+                    clicando aqui!
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div className="flex items-center justify-center min-h-[14rem] min-w-[20rem] bg-red-500">
+              IMAGEM DA LOJA PLACEHOLDER
+            </div>
+            <div className="bg-red-500 p-4">Informações de localização</div>
+          </section>
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      <footer className="bg-gray-900 p-4 flex items-center justify-center w-full">
+        <p className="font-bold">
+          Maloni gold{" "}
+          <span className="text-xs text-gray-200 leading-none font-light">
+            - Suplementos Alimentares
+          </span>
+        </p>
+      </footer>
     </main>
-  )
+  );
 }

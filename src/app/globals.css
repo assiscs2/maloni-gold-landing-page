@@ -17,6 +17,10 @@
 }
 
 body {
+
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimzeLegibility;  
+
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
