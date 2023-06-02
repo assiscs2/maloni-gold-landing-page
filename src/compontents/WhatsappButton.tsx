@@ -17,7 +17,7 @@ import whatsappLogo from "../assets/icons8-whatsapp.svg";
 
 export function WhatsappButton() {
     const wppMessageContent = "teste de mensagem 2"
-    const wppNumber = "11970325360"
+    const wppNumber = "+5511996231744"
 
     return (
         <a 
