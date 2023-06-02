@@ -39,7 +39,7 @@ export default function Home() {
                 <div className="flex flex-col items-center justify-center text-center">
                   <span>
                     Comprando o Whey 100% Max ou Integral, ganhe um óculos de
-                    sol e {" "}
+                    sol e{" "}
                     <span className="font-extrabold underline underline-offset-2 text-yellow-300">
                       {" "}
                       receba em até 24hs com FRETE GRÁTIS
@@ -48,8 +48,8 @@ export default function Home() {
                   </span>
                   <p className="mt-1"></p>
                   <span className="font-bold">
-                    🚨 E não para por ai!! Retirando na loja, você ganha mais um
-                    brinde extra secreto!!
+                    🚨 Não para por ai!! Retirando na loja, você ganha mais um
+                    brinde secreto!!
                 💥💭
                   </span>
                 </div>
@@ -86,7 +86,7 @@ export default function Home() {
               </div>
               <div className="flex items-center justify-center pt-6">
                 <p className="absolute z-50 text-yellow-300 font-extrabold text-2xl text-center translate-y-12">
-                  Comprando a partir de uma unidade por apenas R$ 125,00 cada, receba um óculos de GRAÇA!!
+                  Comprando um whey POR R$ 125,00 cada, receba 1 ÓCULOS!
                   {/* Por apenas R$ 125,00 cada!! */}
                 </p>
               </div>
