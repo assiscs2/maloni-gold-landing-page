@@ -85,8 +85,8 @@ export default function Home() {
                 {/* <Image className="position absolute " src={oculosMaloni} height={500} width={250} priority={true}/> */}
               </div>
               <div className="flex items-center justify-center pt-6">
-                <p className="absolute z-50 text-yellow-300 font-extrabold text-xl text-center translate-y-12">
-                  Comprando 1 Whey POR R$ 125,00, ganhe 1 ÓCULOS!
+                <p className="absolute z-50 text-yellow-300 font-bold text-xl text-center translate-y-12">
+                  Comprando 1 Whey por R$ 125,00, <span className="underline underline-offset-3 font-black text-2xl">ganhe 1 ÓCULOS!</span> 
                   {/* Por apenas R$ 125,00 cada!! */}
                 </p>
               </div>
