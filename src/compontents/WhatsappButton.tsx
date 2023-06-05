@@ -27,22 +27,25 @@ export function WhatsappButton() {
         >
         <button
 
-            className="flex h-7 bg-yellow-300 border-2 border-gray-950 py-9 px-2 items-center justify-center text-black font-bold rounded-2xl hover:bg-yellow-500 transition-colors"
+            className="flex h-7 bg-yellow-300 border-2 border-gray-950 py-9 px-2 items-center text-black font-bold rounded-2xl hover:bg-yellow-500 transition-colors"
             type="button"
 
         >
             <Image
                 src={whatsappLogo}
                 alt="logo do whatsapp"
-                width={80}
-                height={80}
-                className="max-h-[72px] ml-1"
+                width={68}
+                height={68}
+                className="max-h-[4rem]"
             />
             {/* Clique aqui para garantir essa oportunidade ou tirar dúvidas!*/}
 
             <div className="flex flex-col -translate-x-2">
                 <p>POUCAS UNIDADES!! </p> Compre agora ou tire suas dúvidas
                 clicando aqui!
+            </div>
+
+            <div className="h-full w-2 h-full bg-yellow-300 w-4">
             </div>
         </button>
         </a>
