@@ -6,7 +6,7 @@ import wheyIntegral from "../assets/whey-100-integral.png";
 import glassesBlack from "../assets/glasses2.png";
 import glassesYellow from "../assets/glasses3.png";
 import { WhatsappButton } from '@/compontents/WhatsappButton';
-import logoMaloni from '../assets/maloni-logo-2.png'
+import logoMaloni from '../assets/maloni-logo-3.png'
 
 
 export default function Home() {
@@ -16,10 +16,10 @@ export default function Home() {
     <main className="flex items-center text-gray-100 flex-col justify-center text-sm min-w-full">
       <div className="w-full">
         
-        <header className="bg-gray-950 h-[4.5rem] flex items-center justify-center text-yellow-300">
-          <Image src={logoMaloni} height={140} width={440} alt="logo Maloni Gold" className="h-16 w-48"/>
+        <header className="bg-gray-950 h-[4.5rem] flex items-center justify-center text-yellow-200">
+          <Image src={logoMaloni} height={120} width={200} alt="logo Maloni Gold" className="h-14 w-28"/>
 
-            <span className="text-xs font-light">
+            <span className="text-xs font-extralight">
               {" "}
               - Loja física desde 2009
             </span>
@@ -65,9 +65,9 @@ export default function Home() {
                 <WhatsappButton />
               </div>
               <div className="h-[20rem] mt-4 flex items-center justify-center overflow-hidden pt-16">
-                <Image src={glassesYellow} alt="imagem de um óculos amarelo" height={168} width={110} className="absolute -translate-y-[9.5rem] translate-x-[5rem] rotate-12 h-28 w-44"/>
+                <Image src={glassesYellow} alt="imagem de um óculos amarelo" height={150} width={200} className="absolute -translate-y-[9.5rem] translate-x-[5rem] rotate-12 h-28 w-44"/>
           	    
-                <Image src={glassesBlack} alt="imagem de um óculos preto" height={168} width={110} className="absolute -translate-y-[9.5rem] -translate-x-[5rem] -rotate-12 h-28 w-44"/>
+                <Image src={glassesBlack} alt="imagem de um óculos preto" height={150} width={200} className="absolute -translate-y-[9.5rem] -translate-x-[5rem] -rotate-12 h-28 w-44"/>
                 {/* h-[182px] w-[8.5rem] */}
                 <Image
                   className="h-[14rem] w-[7.6rem] translate-x-[48px] translate-y-1"
@@ -88,9 +88,10 @@ export default function Home() {
                 />
                 {/* <Image className="position absolute " src={oculosMaloni} height={500} width={250} priority={true}/> */}
               </div>
-              <div className="flex items-center justify-center">
+              <div className="flex items-center justify-center -translate-y-5">
                 <p className="absolute z-50 text-yellow-300 font-bold text-xl text-center translate-y-12">
-                  Comprando 1 Whey por R$ 125,00, <span className="underline underline-offset-3 font-black text-2xl">GANHE 1 ÓCULOS!</span> 
+                  Comprando 1 Whey por R$ 125,00 {" "}
+                  <span className="underline underline-offset-3 font-black text-2xl block">GANHE 1 ÓCULOS!</span> 
                   {/* Por apenas R$ 125,00 cada!! */}
                 </p>
               </div>
