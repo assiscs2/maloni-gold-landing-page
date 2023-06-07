@@ -32,7 +32,7 @@ export default function Home() {
           <section className="flex p-4 gap-3 items-center justify-center w-full">
             <div>
               <div className="flex items-center justify-center">
-                <p className="mb-3 text-base font-bold">
+                <p className=" text-base font-bold">
                   💥😎 Imperdível, comprou ganhou! 😎💥
                 </p>
               </div>
@@ -54,9 +54,9 @@ export default function Home() {
                 💥💭
                   </span>
                 </div>
-                <div className="flex items-center justify-center pt-2">
+                <div className="flex items-center justify-center pt-1">
                   <p className="mt-1"></p>
-                  <span className="text-xs text-gray-200 font-light">
+                  <span className="text-xs text-gray-200 font-light leading-tight">
                     Estrada Itaquera Guaianazes, nº45 - SP
                   </span>
                 </div>
