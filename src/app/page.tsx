@@ -1,33 +1,37 @@
-import dynamic from "next/dynamic";
 import Image from "next/image";
-import whatsappLogo from "../assets/icons8-whatsapp.svg";
 import wheyMax from "../assets/whey-100-max.png";
 import wheyIntegral from "../assets/whey-100-integral.png";
 import glassesBlack from "../assets/glasses2.png";
 import glassesYellow from "../assets/glasses3.png";
-import { WhatsappButton } from '@/compontents/WhatsappButton';
+import { FirstWhatsappButton } from '../components/FirstWhatsappButton';
 import logoMaloni from '../assets/maloni-logo-3.png'
+import { SecondWhatsappButton } from "../components/SecondWhatsappButton";
+import { VideoPlayer } from "../components/VideoPlayer";
+import logoInstagram from '../assets/instagram-logo.svg'
+import logoFacebook from '../assets/facebook-logo.svg'
+
+
 
 
 export default function Home() {
 
   return (
-  
+
     <main className="flex items-center text-gray-100 flex-col justify-center text-sm min-w-full">
       <div className="w-full">
-        
-        <header className="bg-gray-950 h-[4.5rem] flex items-center justify-center text-yellow-200">
-          <Image src={logoMaloni} height={120} width={200} alt="logo Maloni Gold" className="h-14 w-28"/>
 
-            <span className="text-xs font-extralight">
-              {" "}
-              - Loja física desde 2009
-            </span>
+        <header className="bg-gray-950 h-[4.5rem] flex items-center justify-center text-yellow-200">
+          <Image src={logoMaloni} height={120} width={200} alt="logo Maloni Gold" className="h-14 w-28" />
+
+          <span className="text-xs font-extralight">
+            {" "}
+            - Loja física desde 2009
+          </span>
         </header>
         <div
           // className="bg-gray-100"
           className="bg-gradient-to-br from-red-800 to-blue-800"
-          // className="bg-gradient-to-tl from-blue-600 via-purple-900 to-red-600"
+        // className="bg-gradient-to-tl from-blue-600 via-purple-900 to-red-600"
         >
           <section className="flex p-4 gap-3 items-center justify-center w-full">
             <div>
@@ -45,13 +49,13 @@ export default function Home() {
                       {" "}
                       receba em até 24hs com FRETE GRÁTIS
                     </span>{" "}
-                     {" "}para São Paulo/SP!
+                    {" "}para São Paulo/SP!
                   </span>
                   <p className="mt-1"></p>
                   <span className="font-bold">
                     🚨 Não para por ai!! Retirando na loja, você ganha mais um
                     brinde secreto!!
-                💥💭
+                    💥💭
                   </span>
                 </div>
                 <div className="flex items-center justify-center pt-1">
@@ -62,12 +66,12 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex items-center justify-center pt-4">
-                <WhatsappButton />
+                <FirstWhatsappButton />
               </div>
               <div className="h-[20rem] mt-4 flex items-center justify-center overflow-hidden pt-16">
-                <Image src={glassesYellow} alt="imagem de um óculos amarelo" height={150} width={200} className="absolute -translate-y-[9.5rem] translate-x-[5rem] rotate-12 h-28 w-44"/>
-          	    
-                <Image src={glassesBlack} alt="imagem de um óculos preto" height={150} width={200} className="absolute -translate-y-[9.5rem] -translate-x-[5rem] -rotate-12 h-28 w-44"/>
+                <Image src={glassesYellow} alt="imagem de um óculos amarelo" height={150} width={200} className="absolute -translate-y-[9.5rem] translate-x-[5rem] rotate-12 h-28 w-44" />
+
+                <Image src={glassesBlack} alt="imagem de um óculos preto" height={150} width={200} className="absolute -translate-y-[9.5rem] -translate-x-[5rem] -rotate-12 h-28 w-44" />
                 {/* h-[182px] w-[8.5rem] */}
                 <Image
                   className="h-[14rem] w-[7.6rem] translate-x-[48px] translate-y-1"
@@ -91,52 +95,48 @@ export default function Home() {
               <div className="flex items-center justify-center -translate-y-5">
                 <p className="absolute z-50 text-yellow-300 font-bold text-xl text-center translate-y-12">
                   Comprando 1 Whey por R$ 125,00 {" "}
-                  <span className="underline underline-offset-3 font-black text-2xl block">GANHE 1 ÓCULOS!</span> 
+                  <span className="underline underline-offset-3 font-black text-2xl block">GANHE 1 ÓCULOS!</span>
                   {/* Por apenas R$ 125,00 cada!! */}
                 </p>
               </div>
             </div>
           </section>
-          <section className="flex p-4 gap-3 items-center flex-col justify-center w-full mt-28">
+          <section className="flex p-4 gap-3 items-center flex-col justify-center w-full mt-14">
             <div className="flex flex-col">
               <span className="text-center px-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                molestie volutpat ligula sed ultrices. Vestibulum ante ipsum
-                primis in faucibus orci luctus et ultrices posuere cubilia
-                Curae; Aliquam nec erat rutrum leo aliquet suscipit. Phasellus
-                at augue vel nibh commodo semper id interdum magna. Pellentesque
-                quis mollis odio. Donec ac arcu vitae metus iaculis sollicitudin
-                gravida ut mi.
-              </span>
-              <div className="flex items-center justify-center pt-4">
-                <button className="flex h-7 bg-yellow-300 border-2 border-gray-950 py-9 px-2 items-center justify-center text-black font-bold rounded-2xl hover:bg-yellow-500 transition-colors">
-                  <Image
-                    src={whatsappLogo}
-                    alt="logo do whatsapp"
-                    width={80}
-                    height={80}
-                    className="max-h-[72px] ml-1"
-                  />
-                  {/* Clique aqui para garantir essa oportunidade ou tirar dúvidas!*/}
+                Uma das maiores e mais completas lojas físicas de São Paulo, a Maloni Gold Suplementos Alimentares conta com uma equipe especializada, preços imbatíveis, estacionamento no local e <span className="font-extrabold underline underline-offset-2 text-yellow-300">FRETE GRÁTIS</span> para São Paulo/SP.
 
-                  <div className="flex flex-col -translate-x-2">
-                    <p>POUCAS UNIDADES!! </p> Compre agora ou tire suas dúvidas
-                    clicando aqui!
-                  </div>
-                </button>
+              </span>
+              <p className="text-center mt-2">
+                De uma espiada neste vídeo abaixo a estrutura que você está comprando, <span className="font-extrabold underline underline-offset-2 text-yellow-300">SEM RISCOS</span> de produtos adulterados (falsos) que infelizmente hoje vem crescendo muito na internet, além desta promoção comprou ganhou, temos tudo que você precisa para evoluir físicamente e também cuidar da sua saúde, com preços realmente baixos.
+                </p>
+                <span className="text-center mt-2">LOJA FÍSICA 👇</span>
+              <div className="flex items-center justify-center pt-4">
+                <SecondWhatsappButton />
               </div>
+              <p className="text-center mt-4">Apenas 100 unidades não deixe para depois! 
+              </p>
+              <span className="text-center mt-1">A loja fica na Estrada Itaquera Guaianases 45 - São Paulo /SP</span>
             </div>
-            <div className="flex items-center justify-center min-h-[14rem] min-w-[20rem] bg-red-500">
-              IMAGEM DA LOJA PLACEHOLDER
+            <div className="flex items-center justify-center min-h-[14rem] min-w-[20rem]">
+              <VideoPlayer />
             </div>
-            <div className="bg-red-500 p-4">Informações de localização</div>
+            <p className="text-center text-gray-300">Nos acompanhe em nossas redes sociais!</p>
+            <div className="flex gap-2">
+              <a href="https://www.instagram.com/malonigold/" target="_blank">
+              <Image src={logoInstagram} height={48} width={48} alt="Logo do instagram"/>
+              </a>
+              <a href="https://m.facebook.com/maloni.gold/" target="_blank">
+              <Image src={logoFacebook} height={48} width={48} alt="Logo do facebook"/>
+              </a>
+            </div>
           </section>
         </div>
       </div>
       <footer className="bg-gray-900 p-4 flex items-center justify-center w-full">
-        <p className="font-bold">
+        <p className="font-bold text-yellow-300">
           Maloni gold{" "}
-          <span className="text-xs text-gray-200 leading-none font-light">
+          <span className="text-xs text-yellow-200 leading-none font-light">
             - Suplementos Alimentares
           </span>
         </p>
