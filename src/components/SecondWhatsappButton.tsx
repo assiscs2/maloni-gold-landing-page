@@ -11,7 +11,7 @@ export function SecondWhatsappButton() {
         >
         <button
 
-            className="flex h-7 bg-yellow-300 border-2 border-gray-950 py-9 px-4 items-center text-black font-bold rounded-2xl hover:bg-yellow-500 transition-colors w-[92vw]"
+            className="flex h-7 bg-yellow-300 border-2 border-gray-950 py-9 px-2 items-center text-black font-bold rounded-2xl hover:bg-yellow-500 transition-colors w-[92vw]"
             type="button"
 
         >
@@ -20,7 +20,7 @@ export function SecondWhatsappButton() {
                 alt="logo do whatsapp"
                 width={68}
                 height={68}
-                className="max-h-[4rem]"
+                className="max-h-[3rem] max-w-[3rem]"
             />
 
             <div className="flex flex-col -translate-x-2 w-full">

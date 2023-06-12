@@ -24,7 +24,7 @@ export function FirstWhatsappButton() {
                     alt="logo do whatsapp"
                     width={68}
                     height={68}
-                    className="max-h-[4rem]"
+                    className="max-h-[3rem] max-w-[3rem]"
                 />
 
                 <div className="flex flex-col -translate-x-2">

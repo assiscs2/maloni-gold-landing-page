@@ -110,14 +110,14 @@ export default function Home() {
               <p className="text-center mt-2">
                 De uma espiada neste vídeo abaixo a estrutura que você está comprando, <span className="font-extrabold underline underline-offset-2 text-yellow-300">SEM RISCOS</span> de produtos adulterados (falsos) que infelizmente hoje vem crescendo muito na internet, além desta promoção comprou ganhou, temos tudo que você precisa para evoluir físicamente e também cuidar da sua saúde, com preços realmente baixos.
                 </p>
-                <span className="text-center mt-2">LOJA FÍSICA 👇</span>
               <div className="flex items-center justify-center pt-4">
                 <SecondWhatsappButton />
               </div>
               <p className="text-center mt-4">Apenas 100 unidades não deixe para depois! 
               </p>
-              <span className="text-center mt-1">A loja fica na Estrada Itaquera Guaianases 45 - São Paulo /SP</span>
+              <span className="text-center mt-1">A Maloni Gold loja física, fica na Estrada Itaquera Guaianases 45 - São Paulo/SP</span>
             </div>
+            <span className="text-center">LOJA FÍSICA 👇</span>
             <div className="flex items-center justify-center min-h-[14rem] min-w-[20rem]">
               <VideoPlayer />
             </div>
