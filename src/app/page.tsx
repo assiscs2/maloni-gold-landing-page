@@ -113,21 +113,21 @@ export default function Home() {
               <div className="flex items-center justify-center pt-4">
                 <SecondWhatsappButton />
               </div>
-              <p className="text-center mt-4">Apenas 100 unidades não deixe para depois! 
+              <p className="text-center mt-4"> <span className="font-extrabold">Apenas 100 unidades</span> não deixe para depois! 
               </p>
-              <span className="text-center mt-1">A Maloni Gold loja física, fica na Estrada Itaquera Guaianases 45 - São Paulo/SP</span>
+              <span className="text-center mt-2">A Maloni Gold loja física, fica na Estrada Itaquera Guaianases 45 - São Paulo/SP</span>
             </div>
             <span className="text-center">LOJA FÍSICA 👇</span>
             <div className="flex items-center justify-center min-h-[14rem] min-w-[20rem]">
               <VideoPlayer />
             </div>
             <p className="text-center text-gray-300">Nos acompanhe em nossas redes sociais!</p>
-            <div className="flex gap-2">
+            <div className="flex gap-2 justify-center items-center">
               <a href="https://www.instagram.com/malonigold/" target="_blank">
-              <Image src={logoInstagram} height={48} width={48} alt="Logo do instagram"/>
+              <Image src={logoInstagram} height={48} width={48} alt="Logo do instagram" className="max-h-[3rem] max-w-[3rem]"/>
               </a>
               <a href="https://m.facebook.com/maloni.gold/" target="_blank">
-              <Image src={logoFacebook} height={48} width={48} alt="Logo do facebook"/>
+              <Image src={logoFacebook} height={48} width={48} alt="Logo do facebook" className="max-h-[2.8rem] max-w-[2.8rem]"/>
               </a>
             </div>
           </section>
