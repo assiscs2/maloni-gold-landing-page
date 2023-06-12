@@ -113,7 +113,7 @@ export default function Home() {
               <div className="flex items-center justify-center pt-4">
                 <SecondWhatsappButton />
               </div>
-              <p className="text-center mt-4"> <span className="font-extrabold">Apenas 100 unidades</span> não deixe para depois! 
+              <p className="text-center mt-4 font-extrabold">Apenas 100 unidades não deixe para depois! 
               </p>
               <span className="text-center mt-2">A Maloni Gold loja física, fica na Estrada Itaquera Guaianases 45 - São Paulo/SP</span>
             </div>
