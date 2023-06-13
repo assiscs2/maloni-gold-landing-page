@@ -94,8 +94,8 @@ export default function Home() {
               </div>
               <div className="flex items-center justify-center -translate-y-5">
                 <p className="absolute z-50 text-yellow-300 font-bold text-xl text-center translate-y-12">
-                  Comprando 1 Whey por R$ 125,00 {" "}
-                  <span className="underline underline-offset-3 font-black text-2xl block">GANHE 1 ÓCULOS!</span>
+                  Comprando 1 Whey por R$ 129,00 {" "}
+                  <span className="underline underline-offset-3 font-black text-2xl block">GANHE 1 ÓCULOS DE SOL!</span>
                   {/* Por apenas R$ 125,00 cada!! */}
                 </p>
               </div>
@@ -104,7 +104,7 @@ export default function Home() {
           <section className="flex p-4 gap-3 items-center flex-col justify-center w-full mt-14">
             <div className="flex flex-col">
               <span className="text-center px-2">
-                Uma das maiores e mais completas lojas físicas de São Paulo, a Maloni Gold Suplementos Alimentares conta com uma equipe especializada, preços imbatíveis, estacionamento no local e <span className="font-extrabold underline underline-offset-2 text-yellow-300">FRETE GRÁTIS</span> para São Paulo/SP.
+                Uma das maiores e mais completas lojas de São Paulo, a <span className="font-extrabold underline underline-offset-2 text-yellow-300">Maloni Gold Suplementos Alimentares</span> conta com uma equipe especializada, preços imbatíveis, estacionamento no local e <span className="font-extrabold underline underline-offset-2 text-yellow-300">FRETE GRÁTIS</span> para São Paulo/SP.
 
               </span>
               <p className="text-center mt-2">
@@ -113,14 +113,16 @@ export default function Home() {
               <div className="flex items-center justify-center pt-4">
                 <SecondWhatsappButton />
               </div>
-              <p className="text-center mt-4 font-extrabold">Apenas 100 unidades não deixe para depois! 
+              <p className="text-center mt-4 font-extrabold text-red-500">Apenas 100 unidades não deixe para depois! 
               </p>
-              <span className="text-center mt-2">A Maloni Gold loja física, fica na Estrada Itaquera Guaianases 45 - São Paulo/SP</span>
+
             </div>
-            <span className="text-center">LOJA FÍSICA 👇</span>
-            <div className="flex items-center justify-center min-h-[14rem] min-w-[20rem]">
+            <div className="flex flex-col gap-2 items-center justify-center min-h-[14rem] min-w-[20rem]">
               <VideoPlayer />
+
+              <span className="text-center mt-2">Ficamos na Estrada Itaquera Guaianases 45 - São Paulo/SP</span>
             </div>
+            
             <p className="text-center text-gray-300">Nos acompanhe em nossas redes sociais!</p>
             <div className="flex gap-2 justify-center items-center">
               <a href="https://www.instagram.com/malonigold/" target="_blank">
