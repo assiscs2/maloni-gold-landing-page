@@ -43,7 +43,7 @@ export default function Home() {
               <div className="flex px-2 items-center justify-center flex-col pt-2 font-bold">
                 <div className="flex flex-col items-center justify-center text-center">
                   <span>
-                    Comprando o Whey 100% Max ou Integral, ganhe um óculos de
+                    Levando o Whey 100% Max ou Integral, ganhe um óculos de
                     sol e{" "}
                     <span className="font-extrabold underline underline-offset-2 text-yellow-300">
                       {" "}
@@ -53,8 +53,8 @@ export default function Home() {
                   </span>
                   <p className="mt-1"></p>
                   <span className="font-bold">
-                    🚨 Não para por ai!! Retirando na loja, você ganha mais um
-                    brinde secreto!!
+                    🚨 Não para por ai!! Retirando na loja, você ganha mais um {" "}
+                    <span className="font-extrabold underline underline-offset-2 text-yellow-300">brinde secreto!!</span> 
                     💥💭
                   </span>
                 </div>
@@ -94,7 +94,7 @@ export default function Home() {
               </div>
               <div className="flex items-center justify-center -translate-y-5">
                 <p className="absolute z-50 text-yellow-300 font-bold text-xl text-center translate-y-12">
-                  Comprando 1 Whey por R$ 129,00 {" "}
+                   1 Whey por R$ 129,00 {" "}
                   <span className="underline underline-offset-3 font-black text-2xl block">GANHE 1 ÓCULOS DE SOL!</span>
                   {/* Por apenas R$ 125,00 cada!! */}
                 </p>
@@ -113,14 +113,15 @@ export default function Home() {
               <div className="flex items-center justify-center pt-4">
                 <SecondWhatsappButton />
               </div>
-              <p className="text-center mt-4 font-extrabold text-red-500">Apenas 100 unidades não deixe para depois! 
+              
+              <p className="text-center mt-4 font-extrabold text-yellow-300">Apenas 100 unidades não deixe para depois! 
               </p>
 
             </div>
             <div className="flex flex-col gap-2 items-center justify-center min-h-[14rem] min-w-[20rem]">
               <VideoPlayer />
 
-              <span className="text-center mt-2">Ficamos na Estrada Itaquera Guaianases 45 - São Paulo/SP</span>
+              {/* <span className="text-center mt-2">Ficamos na Estrada Itaquera Guaianases 45 - São Paulo/SP</span> */}
             </div>
             
             <p className="text-center text-gray-300">Nos acompanhe em nossas redes sociais!</p>

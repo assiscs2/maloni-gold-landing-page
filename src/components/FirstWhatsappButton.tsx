@@ -28,8 +28,7 @@ export function FirstWhatsappButton() {
                 />
 
                 <div className="flex flex-col -translate-x-2">
-                    <p>POUCAS UNIDADES!! </p> Compre agora ou tire suas dúvidas
-                    clicando aqui!
+                    <p>POUCAS UNIDADES!! </p> Não fique de fora! Clique aqui e garanta essa oportunidade!
                 </div>
             </button>
         </a>
