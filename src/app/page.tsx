@@ -113,12 +113,12 @@ export default function Home() {
               <div className="flex items-center justify-center pt-4">
                 <SecondWhatsappButton />
               </div>
-              
-              <p className="text-center mt-4 font-extrabold text-yellow-300">Apenas 100 unidades não deixe para depois! 
+
+              <p className="text-center mt-8 font-extrabold text-yellow-300 text-base">Apenas 100 unidades não deixe para depois! 
               </p>
 
             </div>
-            <div className="flex flex-col gap-2 items-center justify-center min-h-[14rem] min-w-[20rem]">
+            <div className="flex flex-col gap-2 items-center justify-center min-h-[12rem] min-w-[20rem]">
               <VideoPlayer />
 
               {/* <span className="text-center mt-2">Ficamos na Estrada Itaquera Guaianases 45 - São Paulo/SP</span> */}
