@@ -2,7 +2,7 @@
 import Image from "next/image";
 import whatsappLogo from "../assets/icons8-whatsapp.svg";
 
-export const wppMessageContent = "teste de mensagem dois"
+export const wppMessageContent = "Quero garantir meu whey e óculos de sol!"
 export const wppNumber = "+5511996231744"
 
 
