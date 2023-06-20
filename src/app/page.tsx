@@ -20,7 +20,7 @@ export default function Home() {
     <main className="flex items-center text-gray-100 flex-col justify-center text-sm min-w-full">
       <div className="w-full">
 
-        <header className="bg-gray-950 h-[4.5rem] flex items-center justify-center text-yellow-200">
+        <header className="bg-gray-950 h-[4rem] flex items-center justify-center text-yellow-200">
           <Image src={logoMaloni} height={120} width={200} alt="logo Maloni Gold" className="h-14 w-28" />
 
           <span className="text-xs font-extralight">
@@ -49,7 +49,8 @@ export default function Home() {
                       {" "}
                       receba em até 24hs com FRETE GRÁTIS
                     </span>{" "}
-                    {" "}para São Paulo/SP!
+                    {" "}para {" "}
+                    <p>São Paulo/SP!</p>
                   </span>
                   <p className="mt-1"></p>
                   <span className="font-bold">
@@ -65,10 +66,10 @@ export default function Home() {
                   </span>
                 </div>
               </div>
-              <div className="flex items-center justify-center pt-4 -mt-2">
+              <div className="flex items-center justify-center pt-4 -mt-1">
                 <FirstWhatsappButton />
               </div>
-              <div className="h-[20rem] mt-3.5 flex items-center justify-center overflow-hidden pt-16">
+              <div className="h-[20rem] mt-4 flex items-center justify-center overflow-hidden pt-16">
                 <Image src={glassesYellow} alt="imagem de um óculos amarelo" height={150} width={200} className="absolute -translate-y-[9.5rem] translate-x-[5rem] rotate-12 h-28 w-44" />
 
                 <Image src={glassesBlack} alt="imagem de um óculos preto" height={150} width={200} className="absolute -translate-y-[9.5rem] -translate-x-[5rem] -rotate-12 h-28 w-44" />
