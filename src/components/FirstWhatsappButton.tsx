@@ -27,7 +27,7 @@ export function FirstWhatsappButton() {
                     className="max-h-[3rem] max-w-[3rem]"
                 />
 
-                <div className="flex flex-col -translate-x-2">
+                <div className="flex flex-col -translate-x-[0.4rem]">
                     <p>POUCAS UNIDADES!! </p> Não fique de fora! Clique aqui e garanta essa oportunidade!
                 </div>
             </button>
