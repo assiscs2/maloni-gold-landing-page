@@ -36,7 +36,7 @@ export default function Home() {
           <section className="flex p-4 gap-3 items-center justify-center w-full">
             <div>
               <div className="flex items-center justify-center max-w-[53rem]">
-                <p className=" text-base font-bold">
+                <p className=" text-base font-bold leading-tight -mt-1">
                   💥😎 Imperdível, comprou ganhou! 😎💥
                 </p>
               </div>
@@ -65,7 +65,7 @@ export default function Home() {
                   </span>
                 </div>
               </div>
-              <div className="flex items-center justify-center pt-4">
+              <div className="flex items-center justify-center pt-4 -mt-1">
                 <FirstWhatsappButton />
               </div>
               <div className="h-[20rem] mt-4 flex items-center justify-center overflow-hidden pt-16">
