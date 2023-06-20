@@ -65,10 +65,10 @@ export default function Home() {
                   </span>
                 </div>
               </div>
-              <div className="flex items-center justify-center pt-4 -mt-1">
+              <div className="flex items-center justify-center pt-4 -mt-2">
                 <FirstWhatsappButton />
               </div>
-              <div className="h-[20rem] mt-4 flex items-center justify-center overflow-hidden pt-16">
+              <div className="h-[20rem] mt-3.5 flex items-center justify-center overflow-hidden pt-16">
                 <Image src={glassesYellow} alt="imagem de um óculos amarelo" height={150} width={200} className="absolute -translate-y-[9.5rem] translate-x-[5rem] rotate-12 h-28 w-44" />
 
                 <Image src={glassesBlack} alt="imagem de um óculos preto" height={150} width={200} className="absolute -translate-y-[9.5rem] -translate-x-[5rem] -rotate-12 h-28 w-44" />
