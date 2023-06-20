@@ -35,7 +35,7 @@ export default function Home() {
         >
           <section className="flex p-4 gap-3 items-center justify-center w-full">
             <div>
-              <div className="flex items-center justify-center">
+              <div className="flex items-center justify-center max-w-[53rem]">
                 <p className=" text-base font-bold">
                   💥😎 Imperdível, comprou ganhou! 😎💥
                 </p>
@@ -43,7 +43,7 @@ export default function Home() {
               <div className="flex px-2 items-center justify-center flex-col pt-2 font-bold">
                 <div className="flex flex-col items-center justify-center text-center">
                   <span>
-                    Levando o Whey 100% Max ou Integral, ganhe um óculos de
+                    Levando o Whey 100% Max Titanium ou Integralmédica, ganhe um óculos de
                     sol e{" "}
                     <span className="font-extrabold underline underline-offset-2 text-yellow-300">
                       {" "}
@@ -101,8 +101,11 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <section className="flex p-4 gap-3 items-center flex-col justify-center w-full mt-14">
-            <div className="flex flex-col">
+          <section 
+          // className="flex flex-col p-4 gap-3 items-center justify-center w-full  mt-14"
+          className="flex p-4 gap-3 flex-col justify-center items-center w-full mt-14"
+          >
+            <div className="flex flex-col max-w-[53rem]">
               <span className="text-center px-2">
                 Uma das maiores e mais completas lojas de São Paulo, a <span className="font-extrabold underline underline-offset-2 text-yellow-300">Maloni Gold Suplementos Alimentares</span> conta com uma equipe especializada, preços imbatíveis, estacionamento no local e <span className="font-extrabold underline underline-offset-2 text-yellow-300">FRETE GRÁTIS</span> para São Paulo/SP.
 
@@ -114,18 +117,19 @@ export default function Home() {
                 <SecondWhatsappButton />
               </div>
 
-              <p className="text-center mt-8 font-extrabold text-yellow-300 text-base">Apenas 100 unidades não deixe para depois! 
+              <p className="text-center mt-6 font-extrabold text-yellow-300 text-base">Apenas 100 unidades não deixe para depois! 
               </p>
 
             </div>
-            <div className="flex flex-col gap-2 items-center justify-center min-h-[12rem] min-w-[20rem]">
+            <div className="flex flex-col gap-2 items-center justify-center min-h-[12rem] min-w-[20rem] p-6 -mt-8 -mb-8">
               <VideoPlayer />
 
               {/* <span className="text-center mt-2">Ficamos na Estrada Itaquera Guaianases 45 - São Paulo/SP</span> */}
             </div>
             
-            <p className="text-center text-gray-300">Nos acompanhe em nossas redes sociais!</p>
+            <p className="text-center text-gray-300 translate-y-2">Redes sociais:</p>
             <div className="flex gap-2 justify-center items-center">
+              
               <a href="https://www.instagram.com/malonigold/" target="_blank">
               <Image src={logoInstagram} height={48} width={48} alt="Logo do instagram" className="max-h-[3rem] max-w-[3rem]"/>
               </a>
