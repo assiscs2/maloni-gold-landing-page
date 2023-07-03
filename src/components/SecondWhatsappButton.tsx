@@ -11,7 +11,7 @@ export function SecondWhatsappButton() {
         >
         <div
 
-            className="flex h-7 bg-yellow-300 border-2 border-gray-950 py-9 px-2 items-center text-black font-bold rounded-2xl hover:bg-yellow-500 transition-colors w-[92vw] max-w-[25.2rem]"
+            className="flex h-7 bg-yellow-300 border-2 border-gray-950 py-9 px-2 items-center text-black font-bold rounded-2xl hover:bg-yellow-500 transition-colors w-[92vw] max-w-[42rem] lg:gap-4 lg:text-lg md:px-4 md:px-6"
         
 
         >

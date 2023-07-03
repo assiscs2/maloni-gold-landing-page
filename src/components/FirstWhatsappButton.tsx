@@ -15,7 +15,7 @@ export function FirstWhatsappButton() {
         >
             <button
 
-                className="flex h-7 bg-yellow-300 border-2 border-gray-950 py-9 px-2 items-center text-black font-bold rounded-2xl hover:bg-yellow-500 transition-colors max-w-[25.2rem]"
+                className="flex h-7 bg-yellow-300 border-2 border-gray-950 py-9 px-2 items-center w text-black font-bold rounded-2xl hover:bg-yellow-500 transition-colors w-[92vw] max-w-[42rem] md:px-4 md:px-6"
                 type="button"
 
             >
@@ -27,7 +27,7 @@ export function FirstWhatsappButton() {
                     className="max-h-[3rem] max-w-[3rem]"
                 />
 
-                <div className="flex flex-col -translate-x-[0.4rem]">
+                <div className="flex flex-col text-center w-full -translate-x-[0.4rem]">
                     <p>POUCAS UNIDADES!! </p> Não fique de fora! Clique aqui e garanta essa oportunidade!
                 </div>
             </button>
