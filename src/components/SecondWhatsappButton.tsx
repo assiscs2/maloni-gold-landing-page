@@ -10,7 +10,7 @@ export function SecondWhatsappButton() {
         <a 
         href={`https://api.whatsapp.com/send?phone=${wppNumber}&text=${wppMessageContent}`}
         target="_blank"
-        onClick={() => {va.track('firstWhatsappButton');}}
+        onClick={() => {va.track('secondWhatsappButton');}}
         >
         <div
 
