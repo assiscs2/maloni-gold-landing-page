@@ -1,4 +1,4 @@
-
+'use client'
 import Image from "next/image";
 import whatsappLogo from "../assets/icons8-whatsapp.svg";
 import va from '@vercel/analytics';

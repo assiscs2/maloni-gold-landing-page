@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import whatsappLogo from "../assets/icons8-whatsapp.svg";
 import { wppNumber, wppMessageContent } from "./FirstWhatsappButton";
