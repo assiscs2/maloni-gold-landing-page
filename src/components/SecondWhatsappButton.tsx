@@ -1,6 +1,7 @@
 import Image from "next/image";
 import whatsappLogo from "../assets/icons8-whatsapp.svg";
 import { wppNumber, wppMessageContent } from "./FirstWhatsappButton";
+import va from '@vercel/analytics';
 
 export function SecondWhatsappButton() {
 
@@ -8,6 +9,7 @@ export function SecondWhatsappButton() {
         <a 
         href={`https://api.whatsapp.com/send?phone=${wppNumber}&text=${wppMessageContent}`}
         target="_blank"
+        onClick={() => {va.track('firstWhatsappButton');}}
         >
         <div
 
