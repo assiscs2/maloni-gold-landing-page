@@ -18,6 +18,9 @@ export default function Home() {
   return (
 
     <main className="flex items-center text-gray-100 flex-col justify-center text-sm min-w-full lg:text-base">
+      {/* <head>
+        <meta name="facebook-domain-verification" content="1mg6s10ngu5mmjbhrnuvq9j3u4fijh" />
+      </head> */}
       <div className="w-full ">
 
         <header className="bg-gray-950 h-[4rem] flex items-center justify-center text-yellow-200 lg:h-24">
@@ -55,7 +58,7 @@ export default function Home() {
                   <p className="mt-1"></p>
                   <span className="font-bold">
                     🚨 Não para por ai!! Retirando na loja, você ganha mais um {" "}
-                    <span className="font-extrabold underline underline-offset-2 text-yellow-300">brinde secreto!!</span> 
+                    <span className="font-extrabold underline underline-offset-2 text-yellow-300">brinde secreto!!</span>
                     💥💭
                   </span>
                 </div>
@@ -95,16 +98,16 @@ export default function Home() {
               </div>
               <div className="flex items-center justify-center -translate-y-5 lg:mt-28">
                 <p className="absolute z-50 text-yellow-300 font-bold text-xl text-center translate-y-12 lg:text-3xl">
-                   1 Whey por R$ 129,00 {" "}
+                  1 Whey por R$ 129,00 {" "}
                   <span className="underline underline-offset-3 font-black text-2xl block lg:text-3xl lg:mt-2">GANHE 1 ÓCULOS DE SOL!</span>
                   {/* Por apenas R$ 125,00 cada!! */}
                 </p>
               </div>
             </div>
           </section>
-          <section 
-          // className="flex flex-col p-4 gap-3 items-center justify-center w-full  mt-14"
-          className="flex p-4 gap-3 flex-col justify-center items-center w-full mt-14 lg:mt-20"
+          <section
+            // className="flex flex-col p-4 gap-3 items-center justify-center w-full  mt-14"
+            className="flex p-4 gap-3 flex-col justify-center items-center w-full mt-14 lg:mt-20"
           >
             <div className="flex flex-col max-w-[72rem]">
               <span className="text-center px-2">
@@ -113,12 +116,12 @@ export default function Home() {
               </span>
               <p className="text-center mt-2">
                 De uma espiada neste vídeo abaixo a estrutura que você está comprando, <span className="font-extrabold underline underline-offset-2 text-yellow-300">SEM RISCOS</span> de produtos adulterados (falsos) que infelizmente hoje vem crescendo muito na internet, além desta promoção comprou ganhou, temos tudo que você precisa para evoluir físicamente e também cuidar da sua saúde, com preços realmente baixos.
-                </p>
+              </p>
               <div className="flex items-center justify-center pt-4 lg:mt-4">
                 <SecondWhatsappButton />
               </div>
 
-              <p className="text-center mt-6 font-extrabold text-yellow-300 text-base md:text-2xl lg:text-3xl lg:mt-10">Apenas 100 unidades não deixe para depois! 
+              <p className="text-center mt-6 font-extrabold text-yellow-300 text-base md:text-2xl lg:text-3xl lg:mt-10">Apenas 100 unidades não deixe para depois!
               </p>
 
             </div>
@@ -127,15 +130,15 @@ export default function Home() {
 
               {/* <span className="text-center mt-2">Ficamos na Estrada Itaquera Guaianases 45 - São Paulo/SP</span> */}
             </div>
-            
+
             <p className="text-center text-gray-300 translate-y-2">Redes sociais:</p>
             <div className="flex gap-2 justify-center items-center">
-              
+
               <a href="https://www.instagram.com/malonigold/" target="_blank">
-              <Image src={logoInstagram} height={48} width={48} alt="Logo do instagram" className="max-h-[3rem] max-w-[3rem]"/>
+                <Image src={logoInstagram} height={48} width={48} alt="Logo do instagram" className="max-h-[3rem] max-w-[3rem]" />
               </a>
               <a href="https://m.facebook.com/maloni.gold/" target="_blank">
-              <Image src={logoFacebook} height={48} width={48} alt="Logo do facebook" className="max-h-[2.8rem] max-w-[2.8rem]"/>
+                <Image src={logoFacebook} height={48} width={48} alt="Logo do facebook" className="max-h-[2.8rem] max-w-[2.8rem]" />
               </a>
             </div>
           </section>
