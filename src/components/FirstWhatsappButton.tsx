@@ -7,8 +7,6 @@ export const wppNumber = "+5511996231744"
 
 
 export function FirstWhatsappButton() {
-    
-    
 
     return (
         
@@ -16,7 +14,6 @@ export function FirstWhatsappButton() {
             href={`https://api.whatsapp.com/send?phone=${wppNumber}&text=${wppMessageContent}`}
             target="_blank"
             onClick={() => {va.track('firstWhatsappButton');}}
-            onLoad={() => {va.track('visitor')}}
         >
             <button
 
