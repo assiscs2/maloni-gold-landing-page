@@ -13,7 +13,7 @@ export function SecondWhatsappButton() {
         target="_blank"
         onClick={() => {
             va.track('secondWhatsappButton')
-            pixel.whatsappButtonEvent()
+            pixel.whatsappButtonEvent2()
         }}
         >
         <div

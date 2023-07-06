@@ -9,8 +9,10 @@ export const event = (name, options = {}) => {
   window.fbq('track', name, options)
 }
 
-export const whatsappButtonEvent = () => {
-  console.log('chegay 1')
+export const whatsappButtonEvent1 = () => {
+  window.fbq('track', 'Contact')
+}
+export const whatsappButtonEvent2 = () => {
   window.fbq('track', 'Contact')
 }
 

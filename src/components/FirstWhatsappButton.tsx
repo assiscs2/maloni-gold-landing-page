@@ -2,7 +2,6 @@
 import Image from "next/image";
 import whatsappLogo from "../assets/icons8-whatsapp.svg";
 import va from '@vercel/analytics';
-import { whatsappButtonEvent } from "@/app/lib/fpixel";
 export const wppMessageContent = "Quero garantir meu whey e óculos de sol!"
 export const wppNumber = "+5511996231744"
 import * as pixel from '../app/lib/fpixel'
@@ -17,7 +16,7 @@ export function FirstWhatsappButton() {
             target="_blank"
             onClick={() => {
                 va.track('firstWhatsappButton')
-                pixel.whatsappButtonEvent()      
+                pixel.whatsappButtonEvent1()      
         }}
             
         >
