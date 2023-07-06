@@ -3,7 +3,7 @@ import Image from "next/image";
 import whatsappLogo from "../assets/icons8-whatsapp.svg";
 import { wppNumber, wppMessageContent } from "./FirstWhatsappButton";
 import va from '@vercel/analytics';
-import { whatsappButtonEvent } from "@/app/lib/fpixel";
+import * as pixel from '../app/lib/fpixel'
 
 export function SecondWhatsappButton() {
 
@@ -13,7 +13,7 @@ export function SecondWhatsappButton() {
         target="_blank"
         onClick={() => {
             va.track('secondWhatsappButton')
-            whatsappButtonEvent
+            pixel.whatsappButtonEvent()
         }}
         >
         <div
