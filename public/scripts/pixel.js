@@ -21,8 +21,7 @@ initializeFacebookPixel(
   window,
   document,
   'script',
-  `https://graph.facebook.com/v17.0/${process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID}/events?access_token=${process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_TOKEN}`
-  // 'https://connect.facebook.net/en_US/fbevents.js'
+  'https://connect.facebook.net/en_US/fbevents.js'
 )
 
 window.fbq('init', PIXEL_ID)
