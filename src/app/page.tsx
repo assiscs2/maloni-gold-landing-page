@@ -36,7 +36,7 @@ export default function Home() {
           className="bg-gradient-to-br from-red-800 to-blue-800"
         // className="bg-gradient-to-tl from-blue-600 via-purple-900 to-red-600"
         >
-          <section className="flex p-4 gap-3 items-center justify-center w-full">
+          <div className="flex p-4 gap-3 items-center justify-center w-full">
             <div>
               <div className="flex items-center justify-center">
                 <p className=" text-base font-bold leading-tight -mt-1 lg:text-lg lg:mt-4">
@@ -104,8 +104,8 @@ export default function Home() {
                 </p>
               </div>
             </div>
-          </section>
-          <section
+          </div>
+          <div
             // className="flex flex-col p-4 gap-3 items-center justify-center w-full  mt-14"
             className="flex p-4 gap-3 flex-col justify-center items-center w-full mt-14 lg:mt-20"
           >
@@ -141,7 +141,7 @@ export default function Home() {
                 <Image src={logoFacebook} height={48} width={48} alt="Logo do facebook" className="max-h-[2.8rem] max-w-[2.8rem]" />
               </a>
             </div>
-          </section>
+          </div>
         </div>
       </div>
       <footer className="bg-gray-900 p-4 flex items-center justify-center w-full">
