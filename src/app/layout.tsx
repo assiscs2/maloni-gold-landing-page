@@ -1,29 +1,21 @@
 import './globals.css'
-import { Inter, Roboto } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import { FacebookPixel } from './components'
-import Script from 'next/dist/client/script';
+
 
 const inter = Inter({ subsets: ['latin'] })
-
-const roboto = Roboto({
-  weight: ['400', '700'],
-  style: ['normal', 'italic'],
-  subsets: ['latin'],
-  display: 'swap',
-})
 
 export const metadata = {
   title: 'Maloni Gold - Promoção Whey 100%',
   description: 'Desenvolvido por Gustavo Assis - https://github.com/assiscs2/',
 }
 
-
-
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+  
   return (
     <html lang="en">
       <head>

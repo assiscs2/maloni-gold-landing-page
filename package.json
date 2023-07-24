@@ -25,7 +25,8 @@
     "ssr": "^6.2.48",
     "swiper": "^9.3.2",
     "tailwindcss": "3.3.2",
-    "typescript": "5.0.4"
+    "typescript": "5.0.4",
+    "uuid": "^9.0.0"
   },
   "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
   "main": "next.config.js",
@@ -38,5 +39,8 @@
   "bugs": {
     "url": "https://github.com/assiscs2/maloni-gold-landing-page/issues"
   },
-  "homepage": "https://github.com/assiscs2/maloni-gold-landing-page#readme"
+  "homepage": "https://github.com/assiscs2/maloni-gold-landing-page#readme",
+  "devDependencies": {
+    "@types/uuid": "^9.0.2"
+  }
 }

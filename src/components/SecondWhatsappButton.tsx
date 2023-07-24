@@ -2,18 +2,19 @@
 import Image from "next/image";
 import whatsappLogo from "../assets/icons8-whatsapp.svg";
 import * as pixel from '../app/lib/fpixel'
-import { handleWhatsappClick } from "@/app/components/handleWhatsappClick";
+import { handleWhatsappClick } from "@/server/handleWhatsappClick";
 
 
-export function SecondWhatsappButton() {
+export function SecondWhatsappButton() {    
+
 
     return (
         <a 
         href={`https://api.whatsapp.com/send?phone=+5511996231744&text=Quero garantir meu whey e óculos de sol!`}
         target="_blank"
         onClick={() => {
-            // pixel.whatsappButtonEvent2()
-            handleWhatsappClick() 
+            pixel.whatsappButtonEvent2()
+            handleWhatsappClick()
         }}
         >
         <button

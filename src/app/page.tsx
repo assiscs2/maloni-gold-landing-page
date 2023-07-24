@@ -9,11 +9,14 @@ import { SecondWhatsappButton } from "../components/SecondWhatsappButton";
 import { VideoPlayer } from "../components/VideoPlayer";
 import logoInstagram from '../assets/instagram-logo.svg'
 import logoFacebook from '../assets/facebook-logo.svg'
+import { handlePageView } from "@/server/handlePageView";
 
 
 
 
 export default function Home() {
+
+  handlePageView()
 
   return (
 
