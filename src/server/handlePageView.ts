@@ -1,7 +1,8 @@
 
  export async function handlePageView() {
 
-    const url = `https://graph.facebook.com/v17.0/826718561974990/events?access_token=EAACae2YuggUBAP9VfObapGESNP5Hsd0aSd0G8pQZBPpSpJNI0a395AZAQqwWdeIQwn7nvQjxmFXUuqnZAdHWJK2erfM2zuhX61JUw8nhelFzKI8KWlii71cQeTdiZCe59z80WDcURhNZAVrRMetX6cnpfmiya4mGMyetZBC8tsx0pegYu5KhRu065DP7ok35QZD`
+    const url = `https://graph.facebook.com/v17.0/${process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID}/events?access_token=${process.env.NEXT_PUBLIC_FB_ACCESS_TOKEN}`
+    // const url = "https://graph.facebook.com/v17.0/826718561974990/events?access_token=EAACae2YuggUBAFvZC0KdBNZAvnBXxIuR4zHNWqc2MMvRl8oO35NYccjjwKeUi6Drzw4tLqR8qdZAQB7RKjNEUNaZANBwU60d4QL0sUocQJMye1h2cdXCoCYZCdK2ZAb1LJvbmc1JJrJqiUOKsZAD3BOUyK1OrZAhXjjVmc7HvDrjRfRy1JSVfpPtqfOTUB3ITukZD"
 
     const crypto = require('crypto');
     const dateString = new Date().toISOString();
@@ -17,11 +18,16 @@
         "user_data": {
             "client_ip_address": "254.254.254.254",
             "client_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0",
-            "em": "f660ab912ec121d1b1e928a0bb4bc61b15f5ad44d5efdc4e1c92a25e99b8e44a"
+            "em": [
+              "7b17fb0bd173f625b58636fb796407c22b3d16fc78302d79f0fd30c2fc2fc068"
+          ],
+          "ph": [
+              null
+          ]
           }
       }
     ],
-    "test_event_code": "TEST10153"
+        "test_event_code": "TEST10153"
   }
 
 
