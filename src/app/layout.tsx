@@ -1,10 +1,16 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/react';
+import { Inter, Roboto } from 'next/font/google'
 import { FacebookPixel } from './components'
 import Script from 'next/dist/client/script';
 
 const inter = Inter({ subsets: ['latin'] })
+
+const roboto = Roboto({
+  weight: ['400', '700'],
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export const metadata = {
   title: 'Maloni Gold - Promoção Whey 100%',
@@ -43,10 +49,7 @@ export default function RootLayout({
         /> */}
       </head>
       <body className={inter.className}>{children}
-        
-        <Analytics />
         <FacebookPixel />
-
       </body>
     </html>
   )

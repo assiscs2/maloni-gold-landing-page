@@ -1,8 +1,9 @@
 'use client'
 import Image from "next/image";
 import whatsappLogo from "../assets/icons8-whatsapp.svg";
-import va from '@vercel/analytics';
 import * as pixel from '../app/lib/fpixel'
+import { handleWhatsappClick } from "@/app/components/handleWhatsappClick";
+
 
 export function SecondWhatsappButton() {
 
@@ -11,8 +12,8 @@ export function SecondWhatsappButton() {
         href={`https://api.whatsapp.com/send?phone=+5511996231744&text=Quero garantir meu whey e óculos de sol!`}
         target="_blank"
         onClick={() => {
-            // va.track('secondWhatsappButton')
-            pixel.whatsappButtonEvent2()
+            // pixel.whatsappButtonEvent2()
+            handleWhatsappClick() 
         }}
         >
         <button

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import wheyMax from "../assets/whey-100-max.png";
+import wheyProbiotica from "../assets/whey-100-probiotica.png";
 import wheyIntegral from "../assets/whey-100-integral.png";
 import glassesBlack from "../assets/glasses2.png";
 import glassesYellow from "../assets/glasses3.png";
@@ -18,9 +18,6 @@ export default function Home() {
   return (
 
     <main className="flex items-center text-gray-100 flex-col justify-center text-sm min-w-full lg:text-base">
-      {/* <head>
-        <meta name="facebook-domain-verification" content="1mg6s10ngu5mmjbhrnuvq9j3u4fijh" />
-      </head> */}
       <div className="w-full ">
 
         <header className="bg-gray-950 h-[4rem] flex items-center justify-center text-yellow-200 lg:h-24">
@@ -46,7 +43,7 @@ export default function Home() {
               <div className="flex px-2 items-center justify-center flex-col pt-2 font-bold max-w-[72rem]">
                 <div className="flex flex-col items-center justify-center text-center lg:mt-2">
                   <span>
-                    Levando o Whey 100% Max Titanium ou Integralmédica, ganhe um óculos de
+                    Levando o Whey 100% Probiótica ou Integralmédica, ganhe um óculos de
                     sol e{" "}
                     <span className="font-extrabold underline underline-offset-2 text-yellow-300">
                       {" "}
@@ -78,27 +75,27 @@ export default function Home() {
                 <Image src={glassesBlack} alt="imagem de um óculos preto" height={150} width={200} className="absolute -translate-y-[9.5rem] -translate-x-[5rem] -rotate-12 h-28 w-44 lg:mr-6 lg:h-32 lg:w-48" />
                 {/* h-[182px] w-[8.5rem] */}
                 <Image
-                  className="h-[14rem] w-[7.6rem] lg:h-[18rem] lg:w-[9.7rem] translate-x-[48px] translate-y-1 lg:mt-24 lg:mr-2"
-                  src={wheyMax}
+                  className="h-[15.6rem] w-[9rem] lg:h-[20.2rem] lg:w-[11.4rem] translate-x-[48px] translate-y-1 lg:mt-24 lg:mr-2"
+                  src={wheyProbiotica}
                   alt="imagem whey 100% marca: Max"
-                  height={500}
-                  width={250}
+                  height={700}
+                  width={420}
                   priority={true}
                 />
                 {/* h-56 w-64 */}
                 <Image
-                  className="h-[17rem] w-[16rem] lg:h-[22rem] lg:w-[19rem] translate-x-[0.75rem] lg:mt-24 lg:ml-2"
+                  className="h-[17rem] w-[15.8rem] lg:h-[22rem] lg:w-[19.2rem] translate-x-[0.75rem] lg:mt-24 lg:ml-2"
                   src={wheyIntegral}
                   alt="imagem whey 100% marca: Integralmédica"
-                  height={700}
-                  width={420}
+                  height={600}
+                  width={320}
                   priority={true}
                 />
                 {/* <Image className="position absolute " src={oculosMaloni} height={500} width={250} priority={true}/> */}
               </div>
               <div className="flex items-center justify-center -translate-y-5 lg:mt-28">
                 <p className="absolute z-50 text-yellow-300 font-bold text-xl text-center translate-y-12 lg:text-3xl">
-                  1 Whey por R$ 129,00 {" "}
+                  1 Whey por R$ 109,00 {" "}
                   <span className="underline underline-offset-3 font-black text-2xl block lg:text-3xl lg:mt-2">GANHE 1 ÓCULOS DE SOL!</span>
                   {/* Por apenas R$ 125,00 cada!! */}
                 </p>
