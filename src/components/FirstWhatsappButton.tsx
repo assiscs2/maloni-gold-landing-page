@@ -13,7 +13,7 @@ export function FirstWhatsappButton() {
             href={`https://api.whatsapp.com/send?phone=+5511996231744&text=Quero garantir meu whey e óculos de sol!`}
             target="_blank"
             onClick={() => {
-                // pixel.whatsappButtonEvent1()   
+                pixel.whatsappButtonEvent()   
                 handleWhatsappClick()
         }}
         

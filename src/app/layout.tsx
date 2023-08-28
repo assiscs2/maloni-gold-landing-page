@@ -1,7 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import { FacebookPixel } from './components'
-
+import { FBPixelScript, FBPixelProvider } from '@rivercode/facebook-conversion-api-nextjs/components';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,25 +20,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="facebook-domain-verification" content="1mg6s10ngu5mmjbhrnuvq9j3u4fijh" />
-        {/* <Script
-          id="fb-pixel"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-            !function(f,b,e,v,n,t,s)
-            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-            n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)}(window, document,'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '${process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID}');
-            fbq('track', 'PageView');
-            `,
-            }}
-            // 'https://graph.facebook.com/v17.0/${process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID}/events?access_token=${process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_TOKEN}')
-        /> */}
       </head>
       <body className={inter.className}>{children}
         <FacebookPixel />

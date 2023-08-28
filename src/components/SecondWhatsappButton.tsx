@@ -3,7 +3,8 @@ import Image from "next/image";
 import whatsappLogo from "../assets/icons8-whatsapp.svg";
 import * as pixel from '../app/lib/fpixel'
 import { handleWhatsappClick } from "@/server/handleWhatsappClick";
-
+import { fbEvent } from '@rivercode/facebook-conversion-api-nextjs';
+import { useEffect } from "react";
 
 export function SecondWhatsappButton() {    
 
@@ -13,7 +14,7 @@ export function SecondWhatsappButton() {
         href={`https://api.whatsapp.com/send?phone=+5511996231744&text=Quero garantir meu whey e óculos de sol!`}
         target="_blank"
         onClick={() => {
-            // pixel.whatsappButtonEvent2()
+            pixel.whatsappButtonEvent()
             handleWhatsappClick()
         }}
         >
