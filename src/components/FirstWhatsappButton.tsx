@@ -8,15 +8,16 @@ import { handleWhatsappClick } from "@/server/handleWhatsappClick";
 export function FirstWhatsappButton() {
 
     return (
-        
+
         <a
             href={`https://api.whatsapp.com/send?phone=+5511996231744&text=Quero garantir meu whey e óculos de sol!`}
             target="_blank"
             onClick={() => {
-                pixel.whatsappButtonEvent()   
+
+                pixel.whatsappButtonEvent()
                 handleWhatsappClick()
-        }}
-        
+            }}
+
         >
             <button
 

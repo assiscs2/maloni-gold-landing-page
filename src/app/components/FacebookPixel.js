@@ -14,7 +14,7 @@ const FacebookPixel = () => {
     if (!loaded) return
 
     pixel.pageview()
-    // handlePageView()
+
   }, [pathname, loaded])
 
   return (
